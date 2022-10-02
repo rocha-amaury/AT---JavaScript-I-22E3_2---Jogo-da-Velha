@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo da Velha</title>
+</head>
+<body>
+
+  <header>
+      <h1>Jogo da Velha</h1>
+      <h2>Jogador da vez: <span id="sJogadorDaVez"></span></h2>
+  </header>
+  
+  <section class="principal">
+    
+    <section class="tabuleiro">
+        <div class="tile_row ">
+            <span class="tile" id="casa1" onclick="selecionarCasa(event, 1)"></span>
+            <span class="tile" id="casa2" onclick="selecionarCasa(event, 2)"></span>
+            <span class="tile" id="casa3" onclick="selecionarCasa(event, 3)"></span>
+        </div>
+        <div class="tile_row ">
+            <span class="tile" id="casa4" onclick="selecionarCasa(event, 4)"></span>
+            <span class="tile" id="casa5" onclick="selecionarCasa(event, 5)"></span>
+            <span class="tile" id="casa6" onclick="selecionarCasa(event, 6)"></span>
+        </div>
+        <div class="tile_row ">
+            <span class="tile" id="casa7" onclick="selecionarCasa(event, 7)"></span>
+            <span class="tile" id="casa8" onclick="selecionarCasa(event, 8)"></span>
+            <span class="tile" id="casa9" onclick="selecionarCasa(event, 9)"></span>
+        </div>
+  
+      <h2>Vencedor: <span id="sVencedor"></span></h2>
+      <div><button onclick="resetJogo()">Reiniciar partida</button></div>
+  
+    </section>
+  
+    <section id="placar">
+    	<table>
+    		<thead>
+    			<tr>
+    				<th>Jogador</th>
+    				<th>Vitória(s)</th>
+    			</tr>
+    		</thead>
+    		<tbody>
+    			<tr>
+    				<td>Jogador X</td>
+    				<td id="numVitoriasX">0</td>
+    			</tr>
+    			<tr>
+    				<td>Jogador O</td>
+    				<td id="numVitoriasO">0</td>
+    			</tr>
+    		</tbody>
+    	</table>
+    </section>
+    
+    <section class="cronometero">
+      <p id="tempo"> Tempo decorrido:
+        <span id="hora">00</span>:
+        <span id="minuto">00</span>:
+        <span id="segundo">00</span>:
+        <span id="millisegundo">00</span>
+      </p>
+  
+      <p>Melhor tempo: 
+        <span id="melhorHora">00</span>:
+        <span id="melhorMinuto">00</span>:
+        <span id="melhorSegundo">00</span>:
+        <span id="melhorMillisegundo">00</span>
+      </p>
+      <button onclick="paraCronometro()">Parar</button>
+      <button onclick="comparaTempo()">Compara Tempo</button>
+    </section>
+  </section>
+
+  
+  <script src="script.js"></script>
+  <script src="tempo.js"></script>
+    
+</body>
+</html>

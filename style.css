@@ -1,0 +1,71 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  
+}
+
+.tile_row {
+    float: left;
+    width: 100%;
+}
+
+.tile {
+    float: left;
+    width: 50px;
+    height: 50px;
+    background-color: cadetblue; 
+    margin: 1px;
+    text-align: center;
+    font-size: 40px;       
+}
+
+.tile:hover {
+  background-color: aquamarine;
+  cursor: pointer;
+}
+
+#sJogadorDaVez, #sVencedor {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+section{
+  padding: 20px 0px 20px 0px;
+/*   border: 2px dashed red; */
+}
+
+button {
+    margin-top: 10px;
+/*     width: 50px; */
+    height: 30px;
+    background: #eee;
+    cursor: pointer;
+}
+
+table{
+	font-size: 20px;
+	text-align: left;
+	border-collapse: collapse;
+  width: 300px;
+  
+}
+
+th{
+	background-color: steelblue;
+	padding: 5px;
+	color: white;
+	font-weight: bold;
+  border: 1px solid; 
+  text-align: center;
+}
+
+td {
+  padding: 5px;
+  font-weight: bold;
+  border: 1px solid;
+  text-align: center;
+}
+/* tr:nth-child(even) {
+  color: #0e815e;
+	font-weight: bold;
+} */
